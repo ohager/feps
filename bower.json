@@ -1,0 +1,23 @@
+{
+  "name": "feps",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.0.0",
+    "jquery": "~2.0.3",
+    "requirejs": "~2.1.8",
+    "react" : "~0.12.2"
+  },
+  "version": "0.0.1",
+  "homepage": "https://github.com/ohager/feps",
+  "authors": [
+    "Oliver Häger <oliver@devbutze.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
