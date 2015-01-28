@@ -3,9 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "prepublish": "npm prune",
-    "jsx": "jsx ./views/jsx ./public/js/components --extension jsx --cache-dir ./jsx-cache",
-    "jsx-watch": "jsx ./views/jsx ./public/js/components --extension jsx --cache-dir ./jsx-cache --watch"
+    "jsx": "node ./node_modules/react-tools/bin/jsx ./views/components ./public/js/views/components -x jsx --cache-dir ./jsx-cache",
+    "browserify": "browserify ./public/js/main.js -o bundle.js -d"
   },
   "dependencies": {
     "body-parser": "~1.10.2",
@@ -18,6 +17,8 @@
     "serve-favicon": "~2.2.0"
   },
   "devDependencies": {
+    "aliasify": "^1.5.1",
+    "browserify": "^8.1.1",
     "react-tools": "*"
   }
 }
